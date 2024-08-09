@@ -6,12 +6,12 @@
         xmlns:local="clr-namespace:Electron"
         mc:Ignorable="d"
         WindowStyle="None" 
-        Title="Settings" Height="450" Width="300" Background="#181818">
+        Title="Settings" Height="450" Width="300" Background="#181818" ResizeMode="NoResize">
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0" CaptionHeight="0" CornerRadius="10"/>
     </WindowChrome.WindowChrome>
     <Grid>
-        <Label Foreground="White" FontSize="25px" Content="SETTINGS&#xA;" HorizontalAlignment="Left" Height="38" Margin="86,10,0,0" VerticalAlignment="Top" Width="132" FontFamily="Cascadia Mono Light"/>
+        <Label Foreground="White" FontSize="25px" Content="SETTINGS&#xA;" HorizontalAlignment="Left" Height="38" Margin="86,22,0,0" VerticalAlignment="Top" Width="132" FontFamily="Cascadia Mono Light"/>
         <TextBlock Foreground="White" FontSize="15px" HorizontalAlignment="Left" Height="auto" Margin="42,385,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono Light">
             <Hyperlink NavigateUri="https://github.com/0x2518" RequestNavigate="Hyperlink_RequestNavigate">
                 https://github.com/0x2518

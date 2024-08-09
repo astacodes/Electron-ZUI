@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         WindowStyle="None" 
         MouseLeftButtonDown="Window_MouseLeftButtonDown"
-        Title="Electron" Background="#181818" Height="456" Width="800" BorderThickness="0">
+        Title="Electron" Background="#181818" Height="456" Width="800" BorderThickness="0" ResizeMode="NoResize">
     <WindowChrome.WindowChrome>
         <WindowChrome GlassFrameThickness="0" CaptionHeight="0" CornerRadius="10"/>
     </WindowChrome.WindowChrome>
@@ -46,7 +46,7 @@
             </Button>
 
             <WebBrowser x:Name="Editor" HorizontalAlignment="Left" Height="336" Margin="27,65,0,0" VerticalAlignment="Top" Width="580" Grid.RowSpan="3"/>
-            <ListBox x:Name="Scripts" SelectionChanged="Scripts_SelectionChanged" Background="#1E1E1E" BorderThickness="0" Margin="612,65,28,55" Grid.RowSpan="3"/>
+            <ListBox x:Name="Scripts" SelectionChanged="Scripts_SelectionChanged" Background="#1E1E1E" BorderThickness="0" Margin="612,65,28,53" Grid.RowSpan="3"/>
             <Button Click="Execute_Click" Padding="10,0,10,0" Background="Transparent" BorderThickness="0" Foreground="White" HorizontalAlignment="Left" Height="35" Margin="27,255,0,0" Grid.Row="2" VerticalAlignment="Top" Width="Auto">
                 <StackPanel Orientation="Horizontal">
                     <Path Data="M0,0 L15,7.5 L0,15 Z" Fill="White" Width="15" Height="15" VerticalAlignment="Center" Margin="0,0,10,0"/>
@@ -92,7 +92,6 @@
             </Button>
             <Button Click="Settings_Click" Padding="10,0,10,0" Background="Transparent" BorderThickness="0" Foreground="White" HorizontalAlignment="Left" Height="37" Margin="740,254,0,0" Grid.Row="2" VerticalAlignment="Top" Width="40">
                 <StackPanel Orientation="Horizontal">
-                    <!-- Updated SVG Icon -->
                     <Path Data="m370-80-16-128q-13-5-24.5-12T307-235l-119 50L78-375l103-78q-1-7-1-13.5v-27q0-6.5 1-13.5L78-585l110-190 119 50q11-8 23-15t24-12l16-128h220l16 128q13 5 24.5 12t22.5 15l119-50 110 190-103 78q1 7 1 13.5v27q0 6.5-2 13.5l103 78-110 190-118-50q-11 8-23 15t-24 12L590-80H370Zm112-260q58 0 99-41t41-99q0-58-41-99t-99-41q-59 0-99.5 41T342-480q0 58 40.5 99t99.5 41Z"
           Fill="White"
           Width="20" 
