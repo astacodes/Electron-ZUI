@@ -60,7 +60,7 @@ namespace Electron
 
         private void Github_Click(object sender, RoutedEventArgs e)
         {
-            Process.Start(new ProcessStartInfo("https://github.com/0x2518/Electron-ZUI") { UseShellExecute = true });
+            Process.Start(new ProcessStartInfo("https://github.com/astacodes/Electron-ZUI") { UseShellExecute = true });
         }
 
         private void Hyperlink_RequestNavigate(object sender, RequestNavigateEventArgs e)
