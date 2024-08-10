@@ -18,13 +18,25 @@ namespace Electron
         public MainWindow()
         {
             InitializeComponent();
+
+            string BootstrapperPath = Path.Combine(Directory.GetCurrentDirectory(), "Electron Bootstrapper.exe");
+
+            if (File.Exists(BootstrapperPath))
+            {
+                Process.Start(BootstrapperPath);
+            }
+            else
+            {
+                MessageBox.Show("Electron Bootstrapper.exe was not found!", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+
             _Settings = new Settings();
 
             PositionSettings();
             this.LocationChanged += MainWindow_LocationChanged;
             this.SizeChanged += MainWindow_SizeChanged;
 
-            Editor.Navigate(new Uri(string.Format("file:///{0}/monaco/index.html", Directory.GetCurrentDirectory())));
+            Editor.Navigate(new Uri($"file:///{Directory.GetCurrentDirectory()}/monaco/index.html"));
 
             foreach (FileInfo S in new DirectoryInfo("./scripts").GetFiles("*.txt"))
             {
@@ -127,7 +139,9 @@ namespace Electron
 
                 foreach (var file in files)
                 {
-                    if (!System.IO.Path.GetFileName(file).Equals("electron.exe", StringComparison.OrdinalIgnoreCase))
+                    string fileName = System.IO.Path.GetFileName(file);
+                    if (!fileName.Equals("electron.exe", StringComparison.OrdinalIgnoreCase) &&
+                        !fileName.Equals("Electron Bootstrapper.exe", StringComparison.OrdinalIgnoreCase))
                     {
                         Process.Start(file);
                         return;

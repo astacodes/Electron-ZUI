@@ -12,12 +12,12 @@
     </WindowChrome.WindowChrome>
     <Grid>
         <Label Foreground="White" FontSize="25px" Content="SETTINGS&#xA;" HorizontalAlignment="Left" Height="38" Margin="86,22,0,0" VerticalAlignment="Top" Width="132" FontFamily="Cascadia Mono Light"/>
-        <TextBlock Foreground="White" FontSize="15px" HorizontalAlignment="Center" Height="auto" Margin="0,385,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono Light">
+        <TextBlock Foreground="White" FontSize="15px" HorizontalAlignment="Center" Height="auto" Margin="0,361,0,0" VerticalAlignment="Top" FontFamily="Cascadia Mono Light">
             <Hyperlink NavigateUri="https://github.com/astacodes" RequestNavigate="Hyperlink_RequestNavigate">
                 https://github.com/astacodes
             </Hyperlink>
         </TextBlock>
-        <Label Foreground="White" FontSize="15px" Content="Made by astaownsyou&#xD;&#xA;" HorizontalAlignment="Center" Height="38" Margin="0,402,0,0" VerticalAlignment="Top" Width="auto" FontFamily="Cascadia Mono Light"/>
+        <Label Foreground="White" FontSize="15px" Content="Made by astaownsyou&#xD;&#xA;" HorizontalAlignment="Center" Height="38" Margin="0,378,0,0" VerticalAlignment="Top" Width="auto" FontFamily="Cascadia Mono Light"/>
         <Button Click="FixRoblox_Click" Padding="10,0,10,0" Background="Transparent" BorderThickness="0" Foreground="White" HorizontalAlignment="Center" Height="35" Margin="0,80,0,0" VerticalAlignment="Top" Width="216">
             <StackPanel Orientation="Horizontal">
                 <Path Data="M420-330h120l-60-120-60 120Zm-80-110q33 0 56.5-23.5T420-520q0-33-23.5-56.5T340-600q-33 0-56.5 23.5T260-520q0 33 23.5 56.5T340-440Zm280 0q33 0 56.5-23.5T700-520q0-33-23.5-56.5T620-600q-33 0-56.5 23.5T540-520q0 33 23.5 56.5T620-440ZM240-80v-170q-39-17-68.5-45.5t-50-64.5q-20.5-36-31-77T80-520q0-158 112-259t288-101q176 0 288 101t112 259q0 42-10.5 83t-31 77q-20.5 36-50 64.5T720-250v170H600v-80h-80v80h-80v-80h-80v80H240Z"
@@ -54,5 +54,6 @@
                 <TextBlock Text="Github" VerticalAlignment="Center" Margin="1,0,0,0" FontFamily="Cascadia Mono Light" FontSize="16"/>
             </StackPanel>
         </Button>
+        <Label Foreground="White" FontSize="15px" Content="Electron ZUI v1.0.3a&#xA;" HorizontalAlignment="Center" Height="38" Margin="0,402,0,0" VerticalAlignment="Top" Width="auto" FontFamily="Cascadia Mono Light"/>
     </Grid>
 </Window>
